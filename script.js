@@ -11,8 +11,6 @@
         }
     })
 
-     console.log()
-
      $(".resize img").click(function(){
         var src = $(this).attr('src');
         $("body").append("<div class='popup'><div class='popup_bg'></div><img src="+src+" class='popup_img' /></div>");
