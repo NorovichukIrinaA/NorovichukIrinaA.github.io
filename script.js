@@ -2,7 +2,7 @@
     $('#myBtn').on('click',function () {
         var weight = Number(document.getElementById("weight").value);
         var height = Number(document.getElementById("height").value);
-        if (( weight + height < 1000 ) && ( weight + height > 0 )) {
+        if ( weight + height < 1000 && weight + height > 0  ) {
             var imt = +weight / (height * height) * 10000;
             imt = imt.toFixed(2);
             document.getElementById("imt").innerHTML = imt;
